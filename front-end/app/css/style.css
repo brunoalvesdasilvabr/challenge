@@ -327,13 +327,13 @@ html {
     }
 
     .hamburger-container::before {
-        content: "";
-        position: absolute;
-        top: 41%;
-        left: 1%;
-        width: 99%;
-        height: .2rem;
-        background: black;
+    content: "";
+    position: absolute;
+    top: 41%;
+    left: 0%;
+    width: 100%;
+    height: .2rem;
+    background: black
     }
 
     .nav-container-mobile {
