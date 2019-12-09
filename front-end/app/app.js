@@ -39,10 +39,17 @@ $scope.cutProductName = function(longName, leng){
 
 $scope.addToCart = function(product){
     $scope.carrinho = true;
-    $scope.products_list.push(product) //adicionando o novo produto clicado a lista de produtos
     //soma os valores dos produtos
-    $scope.carrinho_sum = parseInt($scope.formataDinheiro($scope.carrinho_sum)) + parseInt($scope.formataDinheiro(product.Value))
+    $scope.carrinho_sum = $scope.carrinho_sum + product.Value
 
+    // $scope.products_list.forEach(function(el){
+    //    let values = Object.values(el)
+       
+    //    if(values.indexOf(product.name) == -1){
+    //     $scope.products_list.push(product) //adicionando o novo produto clicado a lista de produtos
+    // }
+        
+    // })
 }
 
 //formata valor para real
@@ -51,8 +58,15 @@ $scope.formataDinheiro = function(n) {
     }
 
 
-// var int = getMoney( test );
-//alert( int );
+$scope.hamburger = function(){
+   let input = document.querySelector('.hamburger_input')
+   if(input.checked == true){
+    document.querySelector('.nav-container-mobile').style.transform = "translateX(0%)"
+   }else{
+    document.querySelector('.nav-container-mobile').style.transform = "translateX(-124%)";
+
+   }
+}
 
 $scope.showProductList = function(){
     $scope.list_items  = !$scope.list_items
