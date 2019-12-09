@@ -3,7 +3,7 @@ app.controller('appController', ['$scope', function ($scope) {
  $scope.carrinho = false; //mostra valor do carrinho quando um item é clicado
 // $scope.price = 20,00
 $scope.loading = false;
-$scope.carrinho_sum = 0;
+$scope.carrinho_sum = 0; //variavel de soma
 $scope.products_list = [];
 $scope.list_items = false;
 // função de para fazer a requisição dos produtos

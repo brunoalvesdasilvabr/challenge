@@ -151,6 +151,9 @@ html {
     height: 100vh;
     position:relative;
 }
+.products-container .wrapper{
+    width:80%
+}
 .products-container .wrapper .loading-container{
     width:40%;
     position:absolute;
@@ -165,7 +168,7 @@ html {
     text-align: center;
     color:#666363;
     font-weight: 300;
-    margin-top:8rem;
+    margin-top:7rem;
     position:relative
 }
 .products-container .wrapper h2::before{
@@ -194,13 +197,17 @@ html {
 }
 .products-container-content .products-container-items{
     width: 20rem;
-    height: 25rem;
-    margin: 2rem 0;
+    height: 22rem;
+    margin: 1rem 0;
     background: #f2f2f2;
     display: flex;
     align-items: center;
     justify-content: center;
     
+}
+.products-container-content .products-container-items:not(:first-child){
+    /* margin-left: 2.5rem; */
+
 }
 
 .product-items-content{
