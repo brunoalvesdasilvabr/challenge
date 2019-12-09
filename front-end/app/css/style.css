@@ -310,12 +310,11 @@ html {
 
     .hamburger-container {
         position: relative;
-        width: 4rem;
+        width: 3rem;
         height: 2rem;
         cursor: pointer;
-        border: .2rem solid black;
-        border-left: 0;
-        border-right: 0;
+        border-top: .2rem solid black;
+        transition: all .5s;
     }
 
     .hamburger-container input[type="checkbox"] {
@@ -326,15 +325,29 @@ html {
         cursor: pointer;
     }
 
-    .hamburger-container::before {
+    .hamburger-line {
     content: "";
     position: absolute;
     top: 41%;
     left: 0%;
     width: 100%;
     height: .2rem;
-    background: black
+    background: black;
+    transition: all .5s;
     }
+ 
+    .hamburger-line2 {
+        content: "";
+        position: absolute;
+        top: 96%;
+        left: 0%;
+        width: 100%;
+        height: .2rem;
+        background: black;
+        transition: all .5s;
+    
+        }
+    
 
     .nav-container-mobile {
         position: fixed;
@@ -353,7 +366,8 @@ html {
     }
 
     .page-items-mobile li {
-        margin: 3rem 0
+        margin: 3rem 0;
+        margin-left: 1rem;
     }
 
     .page-items-mobile li a {

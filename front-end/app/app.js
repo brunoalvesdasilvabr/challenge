@@ -17,6 +17,11 @@ $scope.getProducts = function (){
             $scope.$apply()
 
         })
+        .catch(function(err){
+            alert(err);
+            $scope.loading = false;
+            location.reload()
+        })
 }
 $scope.getProducts()
 
@@ -60,10 +65,22 @@ $scope.formataDinheiro = function(n) {
 
 $scope.hamburger = function(){
    let input = document.querySelector('.hamburger_input')
+   let nav_container = document.querySelector('.nav-container-mobile')
+   let hamburguer_container = document.querySelector('.hamburger-container')
+   let hamburguer_line = document.querySelector('.hamburger-line')
+   let hamburguer_line2 = document.querySelector('.hamburger-line2')
    if(input.checked == true){
-    document.querySelector('.nav-container-mobile').style.transform = "translateX(0%)"
+    nav_container.style.transform = "translateX(0%)"
+    hamburguer_container.style.transform = "rotate(45deg)"
+    hamburguer_line.style.transform = "rotate(88deg)"
+    hamburguer_line.style.top = "0%"
+    hamburguer_line2.style.opacity = "0"
    }else{
-    document.querySelector('.nav-container-mobile').style.transform = "translateX(-124%)";
+    nav_container.style.transform = "translateX(-124%)";
+    hamburguer_container.style.transform = "rotate(0deg)"
+    hamburguer_line.style.transform = "rotate(0deg)"
+    hamburguer_line.style.top = "41%"
+    hamburguer_line2.style.opacity = "1"
 
    }
 }
