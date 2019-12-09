@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="app">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet"  href="dist/style.css">
+    <link rel="stylesheet" href="dist/style.css">
 
     <title>Document</title>
 </head>
-<body>
-    
-    <div ng-controller="appController">
-            <h1>{{ title }}</h1>
 
+<body>
+
+    <div ng-controller="appController">
+        <div class="container">
+            <nav class="nav-container">
+                <div class="wrapper">
+                    <div class="nav-container-content">
+                        <h2 class="nav-container-content-title">Minha Loja</h2>
+                        <ul class="page-items">
+                            <li href="#" class="page-items-content">Perfumaria</li>
+                            <li href="#" class="page-items-content">Maquiagem</li>
+                            <li href="#" class="page-items-content">Cabelos</li>
+                            <li href="#" class="page-items-content">Infantil</li>
+                        </ul>
+                        <div class="icon-carrinho-container">
+                            <img class="icon-carrinho-container-img" src="assets/Shape 3 copy.png" />
+                            <p class="price"> R$ {{ price }} </p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="app/lib/angular.min.js"></script>
     <script src="app/app.js"></script>
 </body>
+
 </html>

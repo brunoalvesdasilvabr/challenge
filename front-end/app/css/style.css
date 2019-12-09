@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0
+}
+
+html{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+/* ------------------------ NAV BAR------------------------- */
+.nav-container{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:5rem;
+    background:#fcfcfc;
+    border-bottom:1px solid #e1e1e1;
+
+}
+
+.nav-container .wrapper{
+    width:80%;
+}
+
+.nav-container .wrapper .nav-container-content{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.nav-container .wrapper .nav-container-content .nav-container-content-title{
+    position:relative;
+    color:#656363;
+}
+.nav-container .wrapper .nav-container-content .nav-container-content-title::before{
+    position:absolute;
+    content:"";
+    right:-2.5rem;
+    top:-30%;
+    width:.1rem;
+    height:2.5rem;
+    background:#e1e1e1;
+}
+.nav-container .wrapper .nav-container-content .page-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    width: 37%;
+    margin-left: -32%;
+
+}
+.nav-container .wrapper .nav-container-content .page-items .page-items-content{
+    text-decoration: none;
+    cursor:pointer;
+    color:#a5a5a5
+}
+.nav-container .wrapper .nav-container-content .icon-carrinho-container{
+    cursor:pointer;
+    border: .2rem solid #7f7e7e;
+    border-radius:2rem 2rem;
+    width:5%;
+    height:2rem;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.nav-container .wrapper .nav-container-content .icon-carrinho-container:active{
+    transform:translateY(2px)
+}
+.nav-container .wrapper .nav-container-content .icon-carrinho-container .icon-carrinho-container-img{
+    width:40%
+}
+.price{
+    color:#a5a5a5;
+    font-size:.8rem;
+    display:none;
+
+}
+
+
+@media (max-width:1920px){
+   html{
+        font-size: 22px;
+   }
+}
+@media (max-width:1730px){
+   html{
+        font-size: 18px;
+   }
+}
+@media (max-width:1500px){
+   html{
+        font-size: 17px;
+   }
+}
+@media (max-width:1366px){
+    html{
+         font-size: 16px;
+    }
+ }
+@media (max-width:1240px){
+    html{
+         font-size: 14px;
+    }
+ }
